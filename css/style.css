@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@300;400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    ---font-titulos:'Roboto', sans-serif;
+    --font-texto:'Poppins', sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top, #fd7302f1 20% ,#f34dd7 50%,rgb(35, 64, 206) 70%);
+    position: relative;
+}
+
+  /*--- Link de direcciones ---*/  
+
+.nav-dir{
+    font-family: var(---font-titulos);
+    font-size: 1.8rem;
+    font-weight: lighter;
+    position: inherit;
+    top: 70px;
+    color: #fff;
+    margin-left: 20px;
+}
+    
+/*--- FOTOS Y ABOUT ME ---*/
+
+.foto-sobre-mi{
+    position: absolute;
+    top: 150px;
+    left: 350px;
+}
+
+.foto-cv{
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.title-sobremi{
+    font-family: var(---font-titulos);
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    color: #fff;
+}
+
+.sobre-mi{
+    width: 350px;
+    height: 230px;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 15px;
+    position: relative;
+   
+}
+
+.quote1, .quote2{
+    width: 30px;
+}
+.quote1{
+    position: absolute;
+    top: 4px;
+    left: 7px;
+    animation: quote 1.5s infinite alternate-reverse;
+}
+ 
+.quote2{
+    position: absolute;
+    right: 7px;
+    bottom: 4px;
+    animation: quote 1.5s infinite alternate-reverse ;
+    animation-delay: 2s;
+    
+}
+/*
+@keyframes quote{
+    0%{
+        -webkit-transform: rotate(8deg);
+    }
+    
+    100%{
+        -webkit-transform: rotate(-8deg);
+        
+    }
+}
+*/
+.text-sobre-mi{
+    position: absolute;
+    margin: 35px 15px;
+    font-family: var(--font-texto);
+    font-size: 1rem;
+    color: #fff;
+}
+
+/*--- INFORMACION EGRESADOS ---*/
+
+.info-egresados{
+    width: 400px;
+    height: auto;
+    position: absolute;
+    top: 125px;
+    left: 40vw;
+}
+
+.location{
+    margin-bottom: 1rem;
+    margin-left: -20px;
+}
+
+.location img{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(230deg) brightness(110%) contrast(102%);
+}
+
+.info-egresados img{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.title-sub{
+    width: 600px;
+    height: auto;
+    font-family: var(---font-titulos);
+   
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.title-sub h1{
+    font-size: 4rem;
+    margin-bottom: .5rem;
+}
+
+.title-sub h2{
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+}
+    
+.info-egresados h3{
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    font-family: var(---font-titulos);
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.tech-soft-skills{
+    width: 600px;
+    height: 260px; 
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.tech-skills h4{
+    font-family: var(---font-titulos);
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #fff;
+    margin-left: 15px;
+    margin-bottom: 4px;
+    padding-top: 10px;
+}
+
+.tech-skills ul{
+    display: flex;
+    list-style: none;
+    position: relative;
+}
+
+.tech-skills ul li{
+    margin-left: .7rem;
+    background-color: #8555EC;
+    margin-right: 5px;
+    color: #fff;
+    font-family: var(--font-texto);
+    font-size: 1rem;
+    padding: 0 .7rem;
+}
+    
+.tech-skills{
+    margin-bottom: 2rem;
+}
+.soft-skills{
+    position: relative;
+    padding-left: 20px;
+}
+
+.soft-skills h4{
+    font-family: var(---font-titulos);
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #fff;
+}
+    
+.soft-skills ul{
+    font-family: var(--font-texto);
+    font-size: 1.2rem;
+    font-weight: 400;
+    
+}
+
+::marker{
+    color: #fff;
+}
+
+.list-1, .list-2{
+    color: #fff;
+}
+    
+.list-1{
+    position: absolute;
+    top: 50px;
+    left: 15%;
+}
+.list-2{
+    position: absolute;
+    top: 50px;
+    right: 25%;
+}
+
+.social-net{
+    width: 450px;
+    height: 225px;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    font-family: var(--font-texto);
+    font-size: 1.3rem;
+}
+
+.social-net p {
+    display: inline;
+    color: #fff;
+}
+.portfolio{
+    padding-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+         
+.social-net a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-net a:hover{
+    text-decoration: underline;
+    color: #fc9c2e;
+}
+
+.social-net img{
+    width: 35px;
+    height: auto;
+    
+}
+
+.linked, .github, .twitter{
+    margin-bottom: 20px;
+    margin-left: 20px;
+} 
+    
+/*--- BUTONOES CV Y MAIL ---*/
+
+.container-email-cv{
+    position: absolute;
+    width: 265px;
+    height: auto;
+    
+    top: 250px;
+    left: 650px;
+}
+    
+.container-email-cv button{
+    
+    width: 260px;
+    height: 60px;
+    background-color: #fd7202 ;
+    border-radius: 22px;
+    border: none;
+    
+}
+
+.container-email-cv button a{
+    text-decoration: none;
+}
+
+.container-email-cv button:nth-child(2){
+    background-color: #7B61FF;
+    margin-top: 50px;
+}
+
+.container-email-cv button img{
+    width: 30px;
+    height: auto;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(230deg) brightness(110%) contrast(102%);
+    
+    
+}
+.container-email-cv button:hover{
+    border: #fff 1px solid;
+}
+
+.container-email-cv button img:hover{
+    transform: scale(1.1);
+}
+    
+
+.container-email-cv button p{
+    display: inline;
+    font-size: 1rem;
+    color: #fff;
+    vertical-align: middle;
+    margin-left: .5rem;
+    font-family: var(---font-titulos);
+    font-size: 2rem;
+}
+
+ /*--- BOTONES: SIGUENTE Y ANTERIOR ---*/
+
+.botones{
+    width: 550px;
+    height: 70px;
+    position: absolute;
+    left: 35vw;
+    bottom: 5px;
+}
+    
+.botones button img{
+    width: 40px;
+    height: auto;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(230deg) brightness(110%) contrast(102%);
+    vertical-align: middle;
+}
+      
+.botones button{
+    
+    width: 230px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    background-color: #34a853;
+    color: #fff;
+    font-size: 2rem;
+    font-family: var(---font-titulos);
+    margin-left: 20px;
+}
+       
+.botones button:nth-child(2){
+    background-color: #4285f4;
+    
+}
+.botones button p:nth-child(1){
+    margin-right: 15px;
+    
+}
+.botones button:hover{
+    border: #fff 1px solid;
+}
+.botones button img:hover{
+    transform: scale(1.1);
+}
+
+.botones button p{
+    display: inline-block;
+    margin-left: 15px;
+}
+    
+    
+   
+    
+
+
+
+    
+    
+
+
+
+    
